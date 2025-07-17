@@ -1,0 +1,36 @@
+
+<form  class=" container" [formGroup]="itemsForm" (ngSubmit)="submitItem()">
+   <div class="row">
+    <div class="col-md-6">
+        <label for="">Barcode</label>
+        <input type="text" class="form-control" formControlName="barcode">
+    </div>
+    <div class="col-md-6">
+        <label >Name</label>
+        <input type="text"class="form-control"formControlName="name" >
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+        <label > Purchase Price</label>
+        <input type="text" class="form-control"formControlName="purchase" >
+    </div>
+    <div class="col-md-6">
+        <label >  Wholesales Price</label>
+        <input type="text" class="form-control"formControlName="wholesale" >
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+        <label >Retail Price</label>
+        <input type="text" class="form-control" formControlName="retail">
+    </div>
+    <div class="col-md-6">
+        <label > Quantity</label>
+        <input type="text" class="form-control" formControlName="quantity">
+    </div>
+   </div>
+    <div class="submit-buttom" >
+        <button type="submit" class=" btn btn-primary " >  {{addItemMode ? "Submit" : "Edit" }}</button>
+    </div>
+</form>

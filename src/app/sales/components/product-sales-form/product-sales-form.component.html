@@ -1,0 +1,124 @@
+<div class=" container">
+ 
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="productSalesForm" (ngSubmit)="submitData()">
+        <div class="row price-type">
+          <div class="col-md-4">Sales Price Type</div>
+  
+          <div class="col-md-4">
+            <div class="p-field-radiobutton">
+              <p-radioButton           
+                value="retail"
+                name="priceType"
+                formControlName="priceType"
+                label="Retail"
+                class="radio-label"
+              
+              ></p-radioButton>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-field-radiobutton">
+              <p-radioButton
+                value="wholesale"
+                name="priceType"
+                formControlName="priceType"
+                label="Wholesales"
+                class="radio-label"
+              ></p-radioButton>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="p-field">
+              <label class="custom-label">Barcode</label>
+              <input
+                
+                type="text"
+                pInputText
+                formControlName="barcode"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="p-field">
+              <label for="productName" class="custom-label">Product Name</label>
+              <input
+                id="productName"
+                type="text"
+                pInputText
+                formControlName="productName"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="p-field">
+              <label for="quantity" class="custom-label">Quantity</label>
+              <input
+                id="quantity"
+                type="text"
+                pInputText
+                formControlName="quantity"
+                #quantityElement
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-field">
+              <label for="price" class="custom-label">Price</label>
+              <input id="price" type="text" pInputText formControlName="price" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-field">
+              <label for="totalPrice" class="custom-label">Total Price</label>
+              <input
+                id="totalPrice"
+                type="text"
+                pInputText
+                formControlName="totalPrice"
+              />
+            </div>
+          </div>
+        </div>
+  
+        <div class="submit-button">
+          <button
+            type="submit"
+            class="btn btn-primary custom-button"
+            [disabled]="productSalesForm.invalid"
+          >
+            {{ mode ? "Add" : "Edit" }}
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="search-box">
+        <fieldset class="section-box">
+          <legend class="section-title">Search</legend>
+          <div class="section-content">
+            <p-autoComplete
+        
+              [(ngModel)]="selectedProduct"
+              [suggestions]="productList"
+              (completeMethod)="searchByName()"
+              (onSelect)="onProductSelect($event)"
+              [dropdown]="true"
+              dropdownMode="current"
+              field="name"
+              placeholder="Search Product"
+            >
+            </p-autoComplete>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>

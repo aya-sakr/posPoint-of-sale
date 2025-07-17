@@ -1,0 +1,62 @@
+<h2 mat-dialog-title>User Permission</h2>
+<mat-dialog-content>
+  <div class="new-users">
+    <form [formGroup]="userForm" (ngSubmit)="submitUser()">
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="purchase" />
+        <label class="radio-option">Purchase</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="sales" />
+        <label class="radio-option">Sales</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="users" />
+        <label class="radio-option">Users</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="returns" />
+        <label class="radio-option">Returns</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="Reports" />
+        <label class="radio-option">Reports</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" formControlName="userRole" value="Products" />
+        <label class="radio-option">Products</label>
+      </div>
+      <hr />
+      <div class="form-group">
+        <label>User Name</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="username"
+          name="username"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input
+          type="password"
+          class="form-control"
+          formControlName="password"
+          name="password"
+        />
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="userForm.invalid"
+        class="btn btn-primary col-12"
+      >
+        {{ addMode ? "Submit" : "Edit" }}
+      </button>
+    </form>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="onClose()">Close</button>
+</mat-dialog-actions>

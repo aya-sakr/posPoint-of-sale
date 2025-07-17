@@ -1,0 +1,29 @@
+.container{
+    .row{
+        .p-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            .custom-label{
+                padding-bottom: .5rem
+              
+            }  
+          }
+    }
+   
+    .product-details{
+        margin-top: 3rem;
+        .row{
+          padding-left: 0;
+          padding-right: 0;
+        }
+        th,
+        td {
+          text-align: center;
+        }
+       
+    
+      }
+    
+}

@@ -1,0 +1,45 @@
+.sidebar-section {
+  // padding: 20px;
+
+  .sidebar-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    .sidebar-highlight {
+      color: #007bff;
+    }
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    .sidebar-items {
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+      .icon-size {
+        width: 1.5rem;
+      }
+      .sidebar-link {
+        text-decoration: none;
+        color: #888;
+        display: flex;
+        padding: 1rem;
+      }
+    }
+
+    .active-link {
+      .sidebar-link {
+        color: #000000;
+      }
+      color: #000000;
+      background-color: #e8f0fe;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+}

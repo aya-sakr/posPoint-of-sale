@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "12fe",
+      "userRole": "sales",
+      "username": "omar",
+      "password": "585222"
+    },
+    {
+      "id": "8bfe",
+      "userRole": "Reports",
+      "username": "amira",
+      "password": "12545454"
+    },
+    {
+      "id": "fd3f",
+      "username": "lololol",
+      "password": "585222"
+    },
+    {
+      "id": "257b",
+      "userRole": "returns",
+      "username": "tota",
+      "password": "1452"
+    }
+  ],
+  "items": [
+    {
+      "barcode": "25852222",
+      "name": "فرشاه اسنان",
+      "purchase": "5",
+      "wholesale": "10",
+      "retail": "20",
+      "quantity": 8,
+      "id": "c459",
+      "quantityToMins": "10"
+    },
+    {
+      "barcode": "12493772",
+      "name": "abdelrhman",
+      "purchase": "10",
+      "wholesale": "12",
+      "retail": "13",
+      "quantity": 29,
+      "id": "630d"
+    },
+    {
+      "barcode": "14141414",
+      "name": "lolo",
+      "purchase": "20",
+      "wholesale": "30",
+      "retail": "40",
+      "quantity": 19,
+      "id": "a115"
+    },
+    {
+      "barcode": "101010",
+      "name": "cream",
+      "purchase": "10",
+      "wholesale": "13",
+      "retail": "15",
+      "quantity": 26,
+      "id": "c235"
+    }
+  ],
+  "sales": [
+    {
+      "id": "",
+      "barcode": "123333",
+      "productName": "معجون اسنان",
+      "priceType": "retail",
+      "quantity": "10",
+      "price": "30",
+      "totalPrice": 300
+    }
+  ]
+}

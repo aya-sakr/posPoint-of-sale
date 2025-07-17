@@ -1,0 +1,29 @@
+<div class="navbar-container">
+  <img src="../../../assets/basket.png" class="nav-icon-size" alt="" />
+
+  <div class="navbar">
+    <div class="dateTime">
+      <span>{{ dateNow | date : "mediumDate" }} </span> <br />
+      <span>{{ dateNow | date : "mediumTime" }} </span>
+    </div>
+    <div class="user-menu" (click)="toggleDropdown()">
+      <img class="avatar" src="../../../assets/user.png" alt="user" />
+
+      <span>{{ userName }}</span>
+      <div class="menu-icon">
+        <span> &#9776;</span>
+      </div>
+      <ul *ngIf="dropdownOpen" class="dropdown">
+        <li routerLinkActive="link-active">
+          <a routerLink="/profile" class="dropdown-link">Profile</a>
+        </li>
+        <li routerLinkActive="link-active">
+          <a class="dropdown-link" routerLink="/setting">Setting</a>
+        </li>
+        <li routerLinkActive="link-active">
+          <a class="dropdown-link" routerLink="/login">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

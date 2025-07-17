@@ -1,0 +1,62 @@
+.container{
+  margin-top: 2rem;
+  .search-product{
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    .clear-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 20px;
+      color: #888;
+    }
+
+  }
+  .card{
+    .row{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    th,
+    td {
+      text-align: center;
+    }
+   
+
+  }
+  .product-pill{
+    margin-top:2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    .pill-form{
+      margin-top: 1rem;
+     .col-12{
+        margin-bottom: 1.5rem;
+       
+    }
+    .quantity-label{
+      padding-right: 1rem;
+      margin-top: 1rem;
+
+   }
+   .price-label{
+    padding-right: 2.2rem;
+    }  
+    .form-buttons{
+      margin-bottom: 1rem;
+    }
+    }
+
+ 
+ 
+  }
+ 
+  
+
+  
+}

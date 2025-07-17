@@ -1,0 +1,51 @@
+.container {
+  .search-input {
+    margin-bottom: 1rem;
+    display: flex;
+    .input-wrapper {
+      position: relative;
+      .clear-btn {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+      }
+   
+    }
+    
+ 
+   
+  }
+  .filter-items{
+    margin-left: 1rem;
+  }
+
+  .mat-elevation-z8 {
+    box-shadow: none;
+    .mat-mdc-header-cell,
+    .mat-mdc-cell {
+      text-align: center;
+    }
+    .item-delete {
+      margin-left: 1rem;
+    }
+    .no-data{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #888;
+      padding: 20px;
+    }
+  }
+  .loading-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: black;
+    height: 200px;
+  }
+  
+}

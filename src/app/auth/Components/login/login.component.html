@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="login-container row">
+    <div class="col-4"></div>
+    <div class="col-4 login-content">
+      <div class="login-title">
+        <h4>Login</h4>
+      </div>
+
+      <div class="login-body">
+        <form [formGroup]="loginForm" (ngSubmit)="submitUser()">
+          <div class="form-group input-group col-12">
+            <span class="input-group-text code-inline"
+              ><i class="fa-solid fa-user login-icon"></i
+            ></span>
+
+            <input
+              type="text"
+              class="form-control"
+              formControlName="username"
+              name="userName"
+              placeholder="Username"
+            />
+
+            <div class="col-12"></div>
+          </div>
+         
+
+          <div class="form-group input-group col-12">
+            <span class="input-group-text code-inline" id="basic-addon1"
+              ><i class="fa-solid fa-lock login-icon"></i
+            ></span>
+
+            <input
+              type="password"
+              class="form-control"
+              formControlName="password"
+              name="Password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="login-anchor">
+            <a class="login-link" routerLink="/auth/forget">Forget Password?</a>
+          </div>
+          <div class="col-12 form-group">
+            <button
+              type="submit"
+              class="btn login-submit"
+              [disabled]="loginForm.invalid"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+
+
+
+</div>

@@ -4,24 +4,22 @@
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    .example-button-row {
-      display: table-cell;
-      max-width: 600px;
-    }
+    
    }
-    .card{
-        margin-top: 3rem;
-    .row{
-      padding-left: 0;
-      padding-right: 0;
+    .mat-elevation-z8{
+      margin-top: 2rem;
+      .mdc-data-table__cell{
+      text-align: center;
     }
-    th,
-    td {
+    .mdc-data-table__header-cell{
       text-align: center;
     }
     .delet-user{
-      margin-left: 1rem;
+       margin-left: 1rem;
     }
+
+    }
+   
 
     
 
@@ -29,4 +27,4 @@
 
   }
 
-}
+

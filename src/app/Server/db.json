@@ -22,6 +22,18 @@
       "userRole": "returns",
       "username": "tota",
       "password": "1452"
+    },
+    {
+      "id": "7976",
+      "userRole": "users",
+      "username": "koka",
+      "password": "528522"
+    },
+    {
+      "id": "8c5d",
+      "userRole": "Reports",
+      "username": "tota",
+      "password": "252585"
     }
   ],
   "items": [

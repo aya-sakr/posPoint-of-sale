@@ -32,7 +32,6 @@ export class UsersComponent implements OnInit{
 
     this.userSharedService.getNewUser().subscribe((res: any) => {
       if (res) {
-        this.dataSource.push(res);
         this.getUsers();
       }
     });
@@ -66,7 +65,7 @@ export class UsersComponent implements OnInit{
         this.getUsers();
       });
   }
-  deleteUser(userId: any, userIndex: any) {
+  deleteUser(userId: any) {
       this.usersService.deletUser(userId).subscribe(() => {
       this.toaster.success('The product deleted ', 'success');
       this.getUsers()
